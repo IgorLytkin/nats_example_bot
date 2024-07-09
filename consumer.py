@@ -28,7 +28,7 @@ async def on_message(msg: Msg):
 
 async def main():
     # Подключаемся к NATS серверу
-    nc = await nats.connect("nats://127.0.0.1:4222")
+    nc = await nats.connect("nats://singularity:4222")
     # Получаем JetStream-контекст
     js = nc.jetstream()
 
